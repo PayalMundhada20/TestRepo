@@ -8,11 +8,11 @@ retriever: modernSCM(
 
 // The name you want to give your Spring Boot application
 // Each resource related to your app will be given this name
-appName = "springboot-app-demo-poc"
+appName = "payal-build"
 
 pipeline {
     // Use the 'maven' Jenkins agent image which is provided with OpenShift 
-    agent { label "maven" }
+    agent any
     stages {
         stage("Checkout") {
             steps {
